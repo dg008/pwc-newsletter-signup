@@ -1,0 +1,86 @@
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
+header {
+    display: flex;
+    flex-direction:row;
+}
+
+div#name_email {
+	max-width: 380px;
+	display: flex;	
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;	
+}
+
+p {
+	margin-bottom: 1px;
+}
+
+div#submit_cancel {
+	margin-top: 10px;
+	max-width: 410px;
+	display: flex;	
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;	
+}
+
+.button {
+    background-color: silver;
+    border: 2px solid;
+	border-radius: 13px;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover { 
+    background-color: #E79C46;
+}
+
+.button.selected {
+	background-color: orange;
+}
+
+.submit-btn {
+	background-color: orange;
+}
+
+.submit-btn:hover {
+	background-color: green;
+}
+
+.hide {
+	display: none;
+}
+
+/* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}

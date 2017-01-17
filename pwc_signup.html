@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script
+		  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+		  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+		  crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<img src="pwc_logo.png" height="70px"></img>
+			<h1>SignUp for the PwC Newsletter</h1>
+		</header>
+		<hr/>
+		<form action="form_submitted.html">
+			<div id="name_email">
+				<div>
+					<p>Full Name</p>
+					<input id="name" type="text" />	
+				</div>
+				<div>
+					<p>Email</p>
+					<input id="email" type="text" />
+				</div>
+			</div>
+			<div>
+				<p>Which newsletters would you like to receive?</p>
+				<select id="newsletter">
+					<option value="">Please choose...</option>
+					<option value="accounting">Accouting</option>
+					<option value="reporting">Reporting</option>
+					<option value="business">Business News</option>
+				</select>
+			</div>
+			<div>
+				<p>How often would you like updates</p>
+				<input type="button" class="button freq-btn" value="Daily" />
+				<input type="button" class="button freq-btn" value="Weekly" />
+				<input type="button" class="button freq-btn" value="Monthly" />
+			</div>
+			<footer>
+				<div>
+					<p><input id="terms_conds" type="checkbox" />Agree to our <a id="terms_conds_link" href="#">terms and conditions</a></p>
+				</div>
+				<div id="submit_cancel">
+					<input type="reset" value="Cancel" class="button cancel-btn" />
+					<input type="submit" value="Signup" class="button submit-btn" />
+				</div>
+			</footer>
+		</form>
+		<div class="alert hide">
+		  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+		  <p id="alert-msg">This is an alert box.</p>
+		</div>
+	</body>
+</html>
